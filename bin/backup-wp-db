@@ -1,0 +1,5 @@
+mkdir -p ${HOME}/backup
+cd ${HOME}/scpa.stage.bluegull.co
+DBFILE=${HOME}/backup/scpa.stage.bluegull.co-db-`date +"%Y%m%d"-%T`.sql
+echo Backing up DB to ${DBFILE}
+wp db export ${DBFILE}
