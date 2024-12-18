@@ -1,2 +1,2 @@
 # bluegull-tools
-Tools for BlueGull projects
+Tools for general BlueGull projects
