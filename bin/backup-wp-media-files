@@ -1,0 +1,7 @@
+cd ${HOME}
+mkdir -p backup
+FILEZIP=backup/scpa.stage.bluegull.co-wpmediafiles-`date +"%Y%m%d"-%T`.zip
+echo Backing up WordPress files to ${FILEZIP}
+zip --quiet -r ${FILEZIP} scpa.stage.bluegull.co/wp-content/uploads
+echo File backup completed
+
